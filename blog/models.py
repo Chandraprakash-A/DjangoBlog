@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 # Create your models here.
 
-class post(models.Model):
+class Post(models.Model):
     title = models.CharField(max_length=100,)
     content = models.TextField()
     date_posted = models.DateTimeField(default = timezone.now) 
